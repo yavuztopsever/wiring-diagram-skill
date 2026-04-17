@@ -4,7 +4,7 @@
 <defs>
 </defs>
 <rect x="0" y="0" width="1320" height="1120" fill="#ffffff" />
-<text x="660.0" y="32" font-size="20" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Fender Jazz Bass — Series/Parallel DPDT + Kill DPDT</text>
+<text x="660.0" y="32" font-size="20" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Fender Jazz Bass — Parallel / Kill / Series  (one DPDT-ON-OFF-ON)</text>
 <text x="660.0" y="54" font-size="12" text-anchor="middle" font-family="sans-serif" fill="#555">Vol / Vol / Tone   |   250kA pots   |   0.047µF tone cap   |   passive</text>
 <rect x="252.0" y="162.0" width="36" height="96" fill="#d8d8d8" stroke="#111" stroke-width="2" rx="3" />
 <text x="270.0" y="154.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Neck Pickup</text>
@@ -108,8 +108,8 @@
 <text x="638.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#fff" stroke="#fff" stroke-width="3.5">3</text>
 <text x="638.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">3</text>
 <rect x="757.0" y="493.0" width="46" height="94" fill="#f5f5f5" stroke="#111" stroke-width="2" rx="4" />
-<text x="780.0" y="479.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">MOD  (Series / Parallel)</text>
-<text x="780.0" y="491.0" font-size="8" text-anchor="middle" font-family="sans-serif" fill="#666">DPDT ON-ON</text>
+<text x="780.0" y="479.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">MOD  (Parallel / Kill / Series)</text>
+<text x="780.0" y="491.0" font-size="8" text-anchor="middle" font-family="sans-serif" fill="#666">DPDT ON-OFF-ON</text>
 <circle cx="767" cy="512" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
 <text x="767" y="515.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">1</text>
 <circle cx="793" cy="512" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
@@ -122,31 +122,16 @@
 <text x="767" y="571.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">5</text>
 <circle cx="793" cy="568" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
 <text x="793" y="571.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">6</text>
-<rect x="917.0" y="493.0" width="46" height="94" fill="#f5f5f5" stroke="#111" stroke-width="2" rx="4" />
-<text x="940.0" y="479.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">KILL  (Stutter)</text>
-<text x="940.0" y="491.0" font-size="8" text-anchor="middle" font-family="sans-serif" fill="#666">DPDT ON-ON</text>
-<circle cx="927" cy="512" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
-<text x="927" y="515.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">1</text>
-<circle cx="953" cy="512" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
-<text x="953" y="515.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">2</text>
-<circle cx="927" cy="540" r="6" fill="#fff3b0" stroke="#111" stroke-width="1.4" />
-<text x="927" y="543.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">3</text>
-<circle cx="953" cy="540" r="6" fill="#fff3b0" stroke="#111" stroke-width="1.4" />
-<text x="953" y="543.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">4</text>
-<circle cx="927" cy="568" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
-<text x="927" y="571.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">5</text>
-<circle cx="953" cy="568" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
-<text x="953" y="571.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">6</text>
-<circle cx="1140.0" cy="540.0" r="26" fill="#f5f5f5" stroke="#111" stroke-width="2" />
-<rect x="1118.0" y="534.0" width="22" height="12" fill="#ddd" stroke="#888" stroke-width="1" />
-<text x="1140.0" y="504.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Output Jack</text>
-<text x="1140.0" y="544.0" font-size="8" text-anchor="middle" font-family="sans-serif" fill="#666">TS</text>
-<path d="M1164.6657657493133,531.7780780835623 L1194,522" stroke="#111" stroke-width="1.8" />
-<circle cx="1194" cy="522" r="5" fill="#fff" stroke="#111" stroke-width="1.2" />
-<text x="1204" y="525" font-size="9" text-anchor="start" font-family="sans-serif" fill="#222" font-weight="bold">T  (tip)</text>
-<path d="M1164.6657657493133,548.2219219164377 L1194,558" stroke="#111" stroke-width="1.8" />
-<circle cx="1194" cy="558" r="5" fill="#fff" stroke="#111" stroke-width="1.2" />
-<text x="1204" y="561" font-size="9" text-anchor="start" font-family="sans-serif" fill="#222" font-weight="bold">S  (sleeve)</text>
+<circle cx="960.0" cy="540.0" r="26" fill="#f5f5f5" stroke="#111" stroke-width="2" />
+<rect x="938.0" y="534.0" width="22" height="12" fill="#ddd" stroke="#888" stroke-width="1" />
+<text x="960.0" y="504.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Output Jack</text>
+<text x="960.0" y="544.0" font-size="8" text-anchor="middle" font-family="sans-serif" fill="#666">TS</text>
+<path d="M984.6657657493133,531.7780780835623 L1014,522" stroke="#111" stroke-width="1.8" />
+<circle cx="1014" cy="522" r="5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="1024" y="525" font-size="9" text-anchor="start" font-family="sans-serif" fill="#222" font-weight="bold">T  (tip)</text>
+<path d="M984.6657657493133,548.2219219164377 L1014,558" stroke="#111" stroke-width="1.8" />
+<circle cx="1014" cy="558" r="5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="1024" y="561" font-size="9" text-anchor="start" font-family="sans-serif" fill="#222" font-weight="bold">S  (sleeve)</text>
 <path d="M597.0,709.0 L597.0,731.0" stroke="#111" stroke-width="3" />
 <path d="M603.0,709.0 L603.0,731.0" stroke="#111" stroke-width="3" />
 <path d="M568.0,720 L597.0,720.0" stroke="#111" stroke-width="1.8" />
@@ -154,9 +139,9 @@
 <circle cx="568.0" cy="720" r="4.4" fill="#fff" stroke="#111" stroke-width="1.2" />
 <circle cx="632.0" cy="720" r="4.4" fill="#fff" stroke="#111" stroke-width="1.2" />
 <text x="600.0" y="745.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">0.047µF</text>
-<path d="M200,820 L1240,820" stroke="#1a1a1a" stroke-width="4.5" stroke-linecap="round" />
+<path d="M200,820 L1060,820" stroke="#1a1a1a" stroke-width="4.5" stroke-linecap="round" />
 <circle cx="200" cy="820" r="4" fill="#1a1a1a" />
-<circle cx="1240" cy="820" r="4" fill="#1a1a1a" />
+<circle cx="1060" cy="820" r="4" fill="#1a1a1a" />
 <path d="M200.0,820 L200.0,836" stroke="#1a1a1a" stroke-width="3" />
 <path d="M185.0,836 L215.0,836" stroke="#1a1a1a" stroke-width="3" />
 <path d="M190.0,842 L210.0,842" stroke="#1a1a1a" stroke-width="3" />
@@ -189,7 +174,7 @@
 <path d="M767,568 L793,568" stroke="#2b6cb0" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
 <circle cx="767" cy="568" r="1.8" fill="#2b6cb0" />
 <circle cx="793" cy="568" r="1.8" fill="#2b6cb0" />
-<text x="780.0" y="561.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">series-link jumper</text>
+<text x="780.0" y="561.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">series-link  (series only)</text>
 <path d="M250.0,591.9615242270663 L250.0,820 L250.0,820" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
 <circle cx="250.0" cy="591.9615242270663" r="1.8" fill="#1a1a1a" />
 <circle cx="250.0" cy="820" r="1.8" fill="#1a1a1a" />
@@ -223,28 +208,14 @@
 <circle cx="542.0" cy="540.0" r="1.8" fill="#1a1a1a" />
 <circle cx="542.0" cy="820" r="1.8" fill="#1a1a1a" />
 <text x="640.0" y="596.9615242270663" font-size="9" text-anchor="start" font-family="sans-serif" fill="#999">lug 3 unused</text>
-<path d="M530,660 L900,660 L900,540 L927,540" stroke="#e4a82f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M530,660 L630,660 L1014,660 L1014,522" stroke="#e4a82f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
 <circle cx="530" cy="660" r="1.8" fill="#e4a82f" />
-<circle cx="927" cy="540" r="1.8" fill="#e4a82f" />
-<text x="715.0" y="653.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">signal into T3</text>
-<path d="M927,512 L927,455 L1194,455 L1194,522" stroke="#e4a82f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="927" cy="512" r="1.8" fill="#e4a82f" />
-<circle cx="1194" cy="522" r="1.8" fill="#e4a82f" />
-<text x="1060.5" y="448.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">T1: jack tip</text>
-<path d="M953,540 L980,540 L980,610 L1194,610 L1194,522" stroke="#dc2626" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="953" cy="540" r="1.8" fill="#dc2626" />
-<circle cx="1194" cy="522" r="1.8" fill="#dc2626" />
-<text x="1087.0" y="603.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">T4: jack tip  (carries tip→GND when kill ON)</text>
-<path d="M953,568 L953,810 L953,820" stroke="#dc2626" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="953" cy="568" r="1.8" fill="#dc2626" />
-<circle cx="953" cy="820" r="1.8" fill="#dc2626" />
-<text x="963.0" y="692.0" font-size="10" text-anchor="start" font-family="sans-serif" fill="#333" font-style="italic">T6: GND  (kill only)</text>
-<text x="917" y="586" font-size="8" text-anchor="end" font-family="sans-serif" fill="#999">T5 unused (dead-end)</text>
-<text x="963" y="504" font-size="8" text-anchor="start" font-family="sans-serif" fill="#999">T2 unused</text>
-<path d="M1194,558 L1194,820 L1194,820" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-<circle cx="1194" cy="558" r="1.8" fill="#1a1a1a" />
-<circle cx="1194" cy="820" r="1.8" fill="#1a1a1a" />
-<rect x="20" y="660" width="180" height="108" fill="#fafafa" stroke="#bbb" stroke-width="1" rx="4" />
+<circle cx="1014" cy="522" r="1.8" fill="#e4a82f" />
+<text x="822.0" y="653.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">BUS → jack tip</text>
+<path d="M1014,558 L1014,820 L1014,820" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="1014" cy="558" r="1.8" fill="#1a1a1a" />
+<circle cx="1014" cy="820" r="1.8" fill="#1a1a1a" />
+<rect x="20" y="660" width="180" height="92" fill="#fafafa" stroke="#bbb" stroke-width="1" rx="4" />
 <path d="M26,674.0 L48,674.0" stroke="#e4a82f" stroke-width="3" stroke-linecap="round" />
 <text x="56" y="677.0" font-size="10" font-family="sans-serif" fill="#222">Signal / hot bus  (always-on)</text>
 <path d="M26,690.0 L48,690.0" stroke="#f8f8f8" stroke-width="3" stroke-linecap="round" />
@@ -255,26 +226,18 @@
 <text x="56" y="725.0" font-size="10" font-family="sans-serif" fill="#222">MOD parallel-only throws  (T1, T2)</text>
 <path d="M26,738.0 L48,738.0" stroke="#2b6cb0" stroke-width="3" stroke-linecap="round" />
 <text x="56" y="741.0" font-size="10" font-family="sans-serif" fill="#222">MOD series-only jumper  (T5↔T6)</text>
-<path d="M26,754.0 L48,754.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" />
-<text x="56" y="757.0" font-size="10" font-family="sans-serif" fill="#222">KILL kill-only throws  (T4, T6)</text>
-<rect x="80" y="878" width="1160" height="107" fill="#fafafa" stroke="#999" stroke-width="1" rx="4" />
-<text x="88" y="896" font-size="11" font-family="sans-serif" font-weight="bold" fill="#111">MOD switch  —  Series / Parallel toggle</text>
-<path d="M88,902 L1232,902" stroke="#ccc" stroke-width="1" />
-<text x="88" y="917" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">POS A</text>
-<text x="140" y="917" font-size="9" font-family="sans-serif" fill="#333">T3↔T1 closes (neck-GND meets GND rail)  +  T4↔T2 closes (bridge-HOT meets Vol-B.lug 3)</text>
-<text x="140" y="931" font-size="9" font-family="sans-serif" fill="#333">⇒  PARALLEL: each pickup feeds its own volume pot  =  standard J-Bass V/V/T</text>
-<text x="88" y="945" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">POS B</text>
-<text x="140" y="945" font-size="9" font-family="sans-serif" fill="#333">T3↔T5 and T4↔T6 close simultaneously; the T5↔T6 jumper ties both commons together</text>
-<text x="140" y="959" font-size="9" font-family="sans-serif" fill="#333">⇒  neck-GND  =  bridge-HOT  (the series junction inside the coil pair)</text>
-<text x="140" y="973" font-size="9" font-family="sans-serif" fill="#333">⇒  SERIES: coils joined end-to-end, output via Vol-N. Hotter, mid-forward.</text>
-<rect x="80" y="994" width="1160" height="93" fill="#fafafa" stroke="#999" stroke-width="1" rx="4" />
-<text x="88" y="1012" font-size="11" font-family="sans-serif" font-weight="bold" fill="#111">KILL switch  —  Stutter / signal interrupt</text>
-<path d="M88,1018 L1232,1018" stroke="#ccc" stroke-width="1" />
-<text x="88" y="1033" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">POS A</text>
-<text x="140" y="1033" font-size="9" font-family="sans-serif" fill="#333">T3↔T1 closes (signal continues to jack tip)  +  T4↔T2 closes (T2 unused, tip NOT shorted)</text>
-<text x="140" y="1047" font-size="9" font-family="sans-serif" fill="#333">⇒  NORMAL: signal passes through to the jack</text>
-<text x="88" y="1061" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">POS B</text>
-<text x="140" y="1061" font-size="9" font-family="sans-serif" fill="#333">T3↔T5 closes (signal dead-ends at unused T5)  +  T4↔T6 closes (jack tip → GND via T6)</text>
-<text x="140" y="1075" font-size="9" font-family="sans-serif" fill="#333">⇒  KILL: hot path broken AND tip shorted to ground  =  complete silence, no pop</text>
-<text x="50" y="1095" font-size="10" text-anchor="start" font-family="sans-serif" fill="#555">Pot lugs (viewed from the BACK of the pot): 1 = CCW end, 2 = wiper, 3 = CW end.  Volume pots wired hot→lug 3, wiper→out, lug 1→GND, casing (“GND” tab on the pot)→GND.  DPDT: terminals 3 &amp; 4 are the pole commons; 1, 2 = throw A; 5, 6 = throw B. Both poles switch together.</text>
+<rect x="80" y="870" width="1160" height="121" fill="#fafafa" stroke="#999" stroke-width="1" rx="4" />
+<text x="88" y="888" font-size="11" font-family="sans-serif" font-weight="bold" fill="#111">MOD switch (DPDT ON-OFF-ON)  —  all three operating modes</text>
+<path d="M88,894 L1232,894" stroke="#ccc" stroke-width="1" />
+<text x="88" y="909" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">UP</text>
+<text x="140" y="909" font-size="9" font-family="sans-serif" fill="#333">T3↔T1 closes (neck-GND meets GND rail)  +  T4↔T2 closes (bridge-HOT meets Vol-B.lug 3)</text>
+<text x="140" y="923" font-size="9" font-family="sans-serif" fill="#333">⇒  PARALLEL: each pickup feeds its own vol pot  =  standard J-Bass V/V/T</text>
+<text x="88" y="937" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">MIDDLE</text>
+<text x="140" y="937" font-size="9" font-family="sans-serif" fill="#333">NOTHING closes.  Both commons (T3, T4) are floating.  Pickups have no complete current path through their coils.</text>
+<text x="140" y="951" font-size="9" font-family="sans-serif" fill="#333">⇒  KILL: both pickups electrically disconnected; BUS ≈ 0 V  →  silent jack tip</text>
+<text x="88" y="965" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">DOWN</text>
+<text x="140" y="965" font-size="9" font-family="sans-serif" fill="#333">T3↔T5 and T4↔T6 close simultaneously; T5↔T6 jumper ties both commons together</text>
+<text x="140" y="979" font-size="9" font-family="sans-serif" fill="#333">⇒  SERIES: neck-GND ≡ bridge-HOT; coils joined end-to-end, output via Vol-N.  Hotter, mid-forward</text>
+<text x="50" y="1010" font-size="10" text-anchor="start" font-family="sans-serif" fill="#555">Pot lugs (viewed from the BACK of the pot): 1 = CCW end, 2 = wiper, 3 = CW end.  Volume pots wired hot→lug 3, wiper→out, lug 1→GND, casing (“GND” tab on the pot)→GND.  DPDT ON-OFF-ON: terminals 3 &amp; 4 are the pole commons; 1, 2 = throw A (UP); 5, 6 = throw B (DOWN); MIDDLE = both poles open.</text>
+<text x="50" y="1030" font-size="10" text-anchor="start" font-family="sans-serif" fill="#555">Kill action note: with MOD in MIDDLE the jack tip sits at ~0 V but is NOT hard-shorted to GND.  A dedicated hard-kill DPDT would actively short tip→GND (cleaner against cable-capacitance pop) — trade-off here is one switch instead of two.</text>
 </svg>

@@ -1,8 +1,14 @@
-# Formal netlist audit — Jazz Bass series/parallel DPDT mod
+# Formal netlist audit — Jazz Bass Parallel/Kill/Series 1-DPDT mod
 
 **File under audit:** `scripts/examples/jazz_bass_series_parallel_dpdt.py`
-**Claim:** the MOD DPDT switches between stock J-Bass V/V/T (parallel) and
-a series-summed pair (series), with hum cancellation preserved.
+(v0.2 — single DPDT-ON-OFF-ON)
+**Claim:** a single DPDT-ON-OFF-ON switch gives three electrical modes:
+
+- **UP** (throw A closed) → PARALLEL = stock J-Bass V/V/T
+- **MIDDLE** (both poles OFF) → KILL = both pickups disconnected at the commons
+- **DOWN** (throw B closed) → SERIES = two coils summed via T5-T6 jumper
+
+…with hum cancellation preserved across all three modes.
 
 This document exists because the electrical behavior of the mod is hard to
 see from the diagram alone — the visible rail carries many always-on
@@ -10,6 +16,11 @@ grounds, which can read as "the switch dumps everything to ground." It
 doesn't. This trace walks every connection in the example and reasons
 about each, so the claim can be verified by circuit analysis rather than
 by trusting the diagram.
+
+> **Version history:** v0.1 of this example used TWO separate DPDTs (one
+> for series/parallel, one for kill). v0.2 consolidates into ONE
+> DPDT-ON-OFF-ON where the middle position acts as the kill. The v0.1
+> design is preserved in git history. The analysis below covers v0.2.
 
 ---
 
@@ -48,10 +59,12 @@ Switch behavior (both poles move together):
 
 ---
 
-## 2. Full per-wire table (all 22 wires in the example)
+## 2. Full per-wire table (all 18 wires in the v0.2 example)
 
 Numbered to match drawing order in the code. This is every physical wire
-the example draws.
+the example draws. v0.1 had 22 wires including a separate KILL DPDT;
+v0.2's single DPDT-ON-OFF-ON removes four of those and adds one direct
+`BUS → jack.tip` wire.
 
 | # | from | to | color | always-on | PARALLEL role | SERIES role | why it exists |
 |---|---|---|---|---|---|---|---|
@@ -73,23 +86,22 @@ the example draws.
 | 16 | `cap.b` | rail GND | black | ✓ | cap other end to GND | same | completes the tone cap → GND shunt |
 | 17 | `Tone.casing` | rail GND | black | ✓ | pot body ground | same | standard |
 | — | `Tone.lug(3)` | (unused) | — | — | intentionally floating | same | this tone topology only uses two of the three lugs |
-| 18 | `BUS` | `KILL.T3` | gold | ✓ | signal into kill-switch common | same | feeds kill switch |
-| 19 | `KILL.T1` | `jack.tip` | gold | ✓ | **ACTIVE** (kill normal): T3↔T1 → tip gets signal | INACTIVE (kill on): T1 floats | the normal signal path to the jack |
-| 20 | `KILL.T4` | `jack.tip` | gold | ✓ | INACTIVE (kill normal): T4↔T2 closes but T2 is unused, so no effect | **ACTIVE** (kill on): T4↔T6 closes so jack tip shorts to GND through T6 | this wire exists so that in kill mode the jack tip gets pulled to GND cleanly (prevents pops) |
-| 21 | `KILL.T6` | rail GND | black | ✓ | INACTIVE | **ACTIVE** in kill: the short-to-GND path | completes the kill-short circuit |
-| 22 | `Jack.sleeve` | rail GND | black | ✓ | jack ground return to chassis | same | standard jack wiring — sleeve = cable shield |
+| 18 | `BUS` | `jack.tip` | gold | ✓ | combined signal → jack tip → amp | same — but BUS ≈ 0 V in MIDDLE/kill (see §4.3) | **v0.2: signal goes DIRECTLY to the jack**; kill is produced by the MIDDLE position of the single MOD switch, not by a second DPDT |
+| 19 | `Jack.sleeve` | rail GND | black | ✓ | jack ground return to chassis | same | standard jack wiring — sleeve = cable shield |
 
 ### 2.1 Count check
 
-- **Wires terminating at GND rail: 10** — items 4, 5, 8, 9, 11, 12, 16, 17, 21, 22.
-  - Of these, **only two are switched-in by either DPDT** — #5 (MOD T1, active in parallel mode) and #21 (KILL T6, active in kill mode).
+- **Wires terminating at GND rail: 9** — items 4, 5, 8, 9, 11, 12, 16, 17, 19.
+  - Of these, **only one is switched-in by the MOD DPDT** — #5 (MOD T1, active in parallel mode).
   - The other **eight** grounds are **always-on** and exist in every passive bass: both vol-pot casings, both vol-pot lug-1 grounds, tone pot casing, tone cap return, bridge-pickup ground lead, jack sleeve.
-- **Signal wires (gold/white): 11** — items 1, 3, 6, 10, 13, 14, 15, 18, 19, 20, and #7 (the series-link jumper — blue, active only in series mode).
-- **MOD DPDT external connections: 5** — exactly what a DPDT-based
-  series/parallel mod needs.
+- **Signal wires (gold/white): 9** — items 1, 3, 6, 10, 13, 14, 15, 18, and #7 (the series-link jumper — blue, active only in series mode).
+- **MOD DPDT external connections: 5** — exactly what a DPDT series/parallel/kill mod needs.
   - **Only one** (T1 → GND) is a ground destination. The other four are
     a signal destination (T2 → Vol-B), two pickup-lead inputs (T3 ← neck-gnd,
     T4 ← bridge-hot), and the series-link jumper (T5 ↔ T6).
+- **BUS → jack.tip (#18)** is the new direct signal path. In v0.1 this
+  went through a separate KILL DPDT; v0.2's single DPDT-ON-OFF-ON
+  produces the kill by opening both poles in the middle position.
 
 ---
 
@@ -142,12 +154,12 @@ the tone-branch and jack loads).
 BUS  →  Tone.lug(2) [wiper]                       Tone.lug(1) → cap → GND
  │                                                    (side-chain high-cut)
  │
- └─►  KILL.T3 → (T3↔T1 closed) → KILL.T1 → jack.tip → amp input
+ └─►  jack.tip → amp input   (direct, no kill switch in the signal path)
 ```
 
 **Verdict:** this is the stock Fender Jazz Bass V/V/T wiring, unchanged.
 Two independent pickup paths mixed at BUS, with a tone-pot side-chain
-and a kill-switch pass-through to the jack. ✓
+and a direct signal line to the jack. ✓
 
 ---
 
@@ -223,24 +235,34 @@ addition and out-of-phase hum subtraction.
 
 ## 5. Where does the signal go in each mode? (one-liner summary)
 
-**Parallel:**
+**Parallel (switch UP):**
 
 ```
    neck.hot → Vol-N → BUS                \\
                                          \\  → Tone (side-chain to GND via cap)
-   bridge.hot → MOD T4→T2 → Vol-B → BUS  //  → KILL T3→T1 → jack tip
+   bridge.hot → MOD T4→T2 → Vol-B → BUS  //  → jack tip
 ```
 
-Two independent signals mix at BUS.
+Two independent signals mix at BUS → direct line to jack.
 
-**Series:**
+**Middle (kill, both poles OFF):**
+
+```
+   bridge.hot ─◯ floating        (T4 open, coil can't drive current)
+   neck.gnd   ─◯ floating        (T3 open, coil can't drive current)
+   → BUS ≈ 0 V  →  jack tip ≈ 0 V  → silence
+```
+
+Both pickups effectively disconnected; BUS has no source of signal.
+
+**Series (switch DOWN):**
 
 ```
    GND ← bridge.gnd ← [bridge coil] ← bridge.hot
                                           ≡
                                         T4 ≡ T6 ≡ T5 ≡ T3
                                           ≡
-                                       neck.gnd ← [neck coil] ← neck.hot → Vol-N → BUS → Tone/KILL → jack
+                                       neck.gnd ← [neck coil] ← neck.hot → Vol-N → BUS → jack tip
 ```
 
 One series loop; signal emerges at neck.hot as `V_N + V_B`.
@@ -249,18 +271,16 @@ One series loop; signal emerges at neck.hot as `V_N + V_B`.
 
 ## 6. "Isn't everything going to ground?" — common misreading
 
-When you look at the diagram, **10 wires** terminate on the ground rail
+When you look at the diagram, **9 wires** terminate on the ground rail
 at the bottom. Visually this looks like a large ground net, and the MOD
 switch contributes one more wire to it (T1 → rail, wire #5). It's easy
 to mis-read this as "the switch is pouring signal into ground."
 
-**It isn't.** Of those 10 rail-terminating wires, **only two are
+**It isn't.** Of those 9 rail-terminating wires, **only one is
 switch-routed**:
-- wire #5 (MOD T1 → rail) is active only in parallel mode — carrying
+- wire #5 (MOD T1 → rail) is active only in PARALLEL mode — carrying
   `neck.gnd` (the pickup's ground lead, which is supposed to be at
   ground reference) to the rail.
-- wire #21 (KILL T6 → rail) is active only in kill mode — shorting the
-  jack tip to ground for clean silence.
 
 The other 8 rail wires are **always-on chassis grounds** that exist in
 every passive bass regardless of this mod: pot casings, pot lug-1
