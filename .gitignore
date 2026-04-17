@@ -7,3 +7,6 @@ __pycache__/
 # scratch rendering scripts kept during development; not part of the skill
 _render.py
 *.png
+
+# Claude Code session-local settings (project-specific, not part of the skill)
+.claude/
