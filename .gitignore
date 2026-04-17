@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.DS_Store
+
+# scratch rendering scripts kept during development; not part of the skill
+_render.py
+*.png

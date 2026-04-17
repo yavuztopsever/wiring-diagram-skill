@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1320" height="1120" viewBox="0 0 1320 1120">
+<defs>
+</defs>
+<rect x="0" y="0" width="1320" height="1120" fill="#ffffff" />
+<text x="660.0" y="32" font-size="20" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Fender Jazz Bass — Series/Parallel DPDT + Kill DPDT</text>
+<text x="660.0" y="54" font-size="12" text-anchor="middle" font-family="sans-serif" fill="#555">Vol / Vol / Tone   |   250kA pots   |   0.047µF tone cap   |   passive</text>
+<rect x="252.0" y="162.0" width="36" height="96" fill="#d8d8d8" stroke="#111" stroke-width="2" rx="3" />
+<text x="270.0" y="154.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Neck Pickup</text>
+<circle cx="270.0" cy="174.0" r="3.6" fill="#888" stroke="#444" stroke-width="0.8" />
+<circle cx="270.0" cy="198.0" r="3.6" fill="#888" stroke="#444" stroke-width="0.8" />
+<circle cx="270.0" cy="222.0" r="3.6" fill="#888" stroke="#444" stroke-width="0.8" />
+<circle cx="270.0" cy="246.0" r="3.6" fill="#888" stroke="#444" stroke-width="0.8" />
+<path d="M261.0,258.0 L261,280.0" stroke="#2a2a2a" stroke-width="4.0" />
+<path d="M261.0,258.0 L261,280.0" stroke="#f8f8f8" stroke-width="2.4" />
+<circle cx="261" cy="280.0" r="3.4" fill="#f8f8f8" stroke="#111" stroke-width="0.9" />
+<text x="253" y="283.0" font-size="8" text-anchor="end" font-family="sans-serif" fill="#444" font-weight="bold">HOT</text>
+<path d="M279.0,258.0 L279,280.0" stroke="#1a1a1a" stroke-width="2.4" />
+<circle cx="279" cy="280.0" r="3.4" fill="#1a1a1a" stroke="#111" stroke-width="0.9" />
+<text x="287" y="283.0" font-size="8" text-anchor="start" font-family="sans-serif" fill="#444" font-weight="bold">GND</text>
+<rect x="472.0" y="162.0" width="36" height="96" fill="#d8d8d8" stroke="#111" stroke-width="2" rx="3" />
+<text x="490.0" y="154.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Bridge Pickup</text>
+<circle cx="490.0" cy="174.0" r="3.6" fill="#888" stroke="#444" stroke-width="0.8" />
+<circle cx="490.0" cy="198.0" r="3.6" fill="#888" stroke="#444" stroke-width="0.8" />
+<circle cx="490.0" cy="222.0" r="3.6" fill="#888" stroke="#444" stroke-width="0.8" />
+<circle cx="490.0" cy="246.0" r="3.6" fill="#888" stroke="#444" stroke-width="0.8" />
+<path d="M481.0,258.0 L481,280.0" stroke="#2a2a2a" stroke-width="4.0" />
+<path d="M481.0,258.0 L481,280.0" stroke="#f8f8f8" stroke-width="2.4" />
+<circle cx="481" cy="280.0" r="3.4" fill="#f8f8f8" stroke="#111" stroke-width="0.9" />
+<text x="473" y="283.0" font-size="8" text-anchor="end" font-family="sans-serif" fill="#444" font-weight="bold">HOT</text>
+<path d="M499.0,258.0 L499,280.0" stroke="#1a1a1a" stroke-width="2.4" />
+<circle cx="499" cy="280.0" r="3.4" fill="#1a1a1a" stroke="#111" stroke-width="0.9" />
+<text x="507" y="283.0" font-size="8" text-anchor="start" font-family="sans-serif" fill="#444" font-weight="bold">GND</text>
+<circle cx="280.0" cy="540.0" r="40" fill="#f5f5f5" stroke="#111" stroke-width="2" />
+<path d="M273.0,552.1243556529821 A14,14,0,1,0,287.0,552.1243556529821" stroke="#999" stroke-width="1.3" fill="none" />
+<path d="M287.0,552.1243556529821 L284.5000550022184,556.4545144269841" stroke="#999" stroke-width="1.3" stroke-linecap="round" />
+<path d="M287.0,552.1243556529821 L282.00000000040336,552.1244191638405" stroke="#999" stroke-width="1.3" stroke-linecap="round" />
+<text x="280.0" y="525.0" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#999" font-style="italic">CW (front)</text>
+<circle cx="280.0" cy="540.0" r="6" fill="#888" stroke="#111" stroke-width="1" />
+<circle cx="280.0" cy="540.0" r="28" fill="none" stroke="#ddd" stroke-width="0.6" />
+<circle cx="280.0" cy="540.0" r="22" fill="none" stroke="#ddd" stroke-width="0.6" />
+<circle cx="280.0" cy="540.0" r="16" fill="none" stroke="#ddd" stroke-width="0.6" />
+<text x="280.0" y="490.0" font-size="12" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Vol (Neck)</text>
+<text x="280.0" y="560.0" font-size="9" text-anchor="middle" font-family="sans-serif" fill="#555">250kA</text>
+<circle cx="222.0" cy="540.0" r="9" fill="#666" stroke="#111" stroke-width="1" />
+<text x="222.0" y="542.5" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#fff" font-weight="bold">GND</text>
+<path d="M260.0,574.6410161513776 L250.0,591.9615242270663" stroke="#111" stroke-width="2" />
+<circle cx="250.0" cy="591.9615242270663" r="5.5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="242.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#fff" stroke="#fff" stroke-width="3.5">1</text>
+<text x="242.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">1</text>
+<path d="M280.0,580.0 L280.0,600.0" stroke="#111" stroke-width="2" />
+<circle cx="280.0" cy="600.0" r="5.5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="280.0" y="621.0" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#fff" stroke="#fff" stroke-width="3.5">2</text>
+<text x="280.0" y="621.0" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">2</text>
+<path d="M300.0,574.6410161513776 L310.0,591.9615242270663" stroke="#111" stroke-width="2" />
+<circle cx="310.0" cy="591.9615242270663" r="5.5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="318.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#fff" stroke="#fff" stroke-width="3.5">3</text>
+<text x="318.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">3</text>
+<circle cx="440.0" cy="540.0" r="40" fill="#f5f5f5" stroke="#111" stroke-width="2" />
+<path d="M433.0,552.1243556529821 A14,14,0,1,0,447.0,552.1243556529821" stroke="#999" stroke-width="1.3" fill="none" />
+<path d="M447.0,552.1243556529821 L444.5000550022184,556.4545144269841" stroke="#999" stroke-width="1.3" stroke-linecap="round" />
+<path d="M447.0,552.1243556529821 L442.00000000040336,552.1244191638405" stroke="#999" stroke-width="1.3" stroke-linecap="round" />
+<text x="440.0" y="525.0" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#999" font-style="italic">CW (front)</text>
+<circle cx="440.0" cy="540.0" r="6" fill="#888" stroke="#111" stroke-width="1" />
+<circle cx="440.0" cy="540.0" r="28" fill="none" stroke="#ddd" stroke-width="0.6" />
+<circle cx="440.0" cy="540.0" r="22" fill="none" stroke="#ddd" stroke-width="0.6" />
+<circle cx="440.0" cy="540.0" r="16" fill="none" stroke="#ddd" stroke-width="0.6" />
+<text x="440.0" y="490.0" font-size="12" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Vol (Bridge)</text>
+<text x="440.0" y="560.0" font-size="9" text-anchor="middle" font-family="sans-serif" fill="#555">250kA</text>
+<circle cx="382.0" cy="540.0" r="9" fill="#666" stroke="#111" stroke-width="1" />
+<text x="382.0" y="542.5" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#fff" font-weight="bold">GND</text>
+<path d="M420.0,574.6410161513776 L410.0,591.9615242270663" stroke="#111" stroke-width="2" />
+<circle cx="410.0" cy="591.9615242270663" r="5.5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="402.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#fff" stroke="#fff" stroke-width="3.5">1</text>
+<text x="402.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">1</text>
+<path d="M440.0,580.0 L440.0,600.0" stroke="#111" stroke-width="2" />
+<circle cx="440.0" cy="600.0" r="5.5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="440.0" y="621.0" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#fff" stroke="#fff" stroke-width="3.5">2</text>
+<text x="440.0" y="621.0" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">2</text>
+<path d="M460.0,574.6410161513776 L470.0,591.9615242270663" stroke="#111" stroke-width="2" />
+<circle cx="470.0" cy="591.9615242270663" r="5.5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="478.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#fff" stroke="#fff" stroke-width="3.5">3</text>
+<text x="478.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">3</text>
+<circle cx="600.0" cy="540.0" r="40" fill="#f5f5f5" stroke="#111" stroke-width="2" />
+<path d="M593.0,552.1243556529821 A14,14,0,1,0,607.0,552.1243556529821" stroke="#999" stroke-width="1.3" fill="none" />
+<path d="M607.0,552.1243556529821 L604.5000550022185,556.4545144269841" stroke="#999" stroke-width="1.3" stroke-linecap="round" />
+<path d="M607.0,552.1243556529821 L602.0000000004034,552.1244191638405" stroke="#999" stroke-width="1.3" stroke-linecap="round" />
+<text x="600.0" y="525.0" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#999" font-style="italic">CW (front)</text>
+<circle cx="600.0" cy="540.0" r="6" fill="#888" stroke="#111" stroke-width="1" />
+<circle cx="600.0" cy="540.0" r="28" fill="none" stroke="#ddd" stroke-width="0.6" />
+<circle cx="600.0" cy="540.0" r="22" fill="none" stroke="#ddd" stroke-width="0.6" />
+<circle cx="600.0" cy="540.0" r="16" fill="none" stroke="#ddd" stroke-width="0.6" />
+<text x="600.0" y="490.0" font-size="12" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Tone</text>
+<text x="600.0" y="560.0" font-size="9" text-anchor="middle" font-family="sans-serif" fill="#555">250kA</text>
+<circle cx="542.0" cy="540.0" r="9" fill="#666" stroke="#111" stroke-width="1" />
+<text x="542.0" y="542.5" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#fff" font-weight="bold">GND</text>
+<path d="M580.0,574.6410161513776 L570.0,591.9615242270663" stroke="#111" stroke-width="2" />
+<circle cx="570.0" cy="591.9615242270663" r="5.5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="562.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#fff" stroke="#fff" stroke-width="3.5">1</text>
+<text x="562.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">1</text>
+<path d="M600.0,580.0 L600.0,600.0" stroke="#111" stroke-width="2" />
+<circle cx="600.0" cy="600.0" r="5.5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="600.0" y="621.0" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#fff" stroke="#fff" stroke-width="3.5">2</text>
+<text x="600.0" y="621.0" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">2</text>
+<path d="M620.0,574.6410161513776 L630.0,591.9615242270663" stroke="#111" stroke-width="2" />
+<circle cx="630.0" cy="591.9615242270663" r="5.5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="638.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#fff" stroke="#fff" stroke-width="3.5">3</text>
+<text x="638.0" y="610.8179306876174" font-size="14" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">3</text>
+<rect x="757.0" y="493.0" width="46" height="94" fill="#f5f5f5" stroke="#111" stroke-width="2" rx="4" />
+<text x="780.0" y="479.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">MOD  (Series / Parallel)</text>
+<text x="780.0" y="491.0" font-size="8" text-anchor="middle" font-family="sans-serif" fill="#666">DPDT ON-ON</text>
+<circle cx="767" cy="512" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
+<text x="767" y="515.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">1</text>
+<circle cx="793" cy="512" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
+<text x="793" y="515.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">2</text>
+<circle cx="767" cy="540" r="6" fill="#fff3b0" stroke="#111" stroke-width="1.4" />
+<text x="767" y="543.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">3</text>
+<circle cx="793" cy="540" r="6" fill="#fff3b0" stroke="#111" stroke-width="1.4" />
+<text x="793" y="543.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">4</text>
+<circle cx="767" cy="568" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
+<text x="767" y="571.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">5</text>
+<circle cx="793" cy="568" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
+<text x="793" y="571.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">6</text>
+<rect x="917.0" y="493.0" width="46" height="94" fill="#f5f5f5" stroke="#111" stroke-width="2" rx="4" />
+<text x="940.0" y="479.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">KILL  (Stutter)</text>
+<text x="940.0" y="491.0" font-size="8" text-anchor="middle" font-family="sans-serif" fill="#666">DPDT ON-ON</text>
+<circle cx="927" cy="512" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
+<text x="927" y="515.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">1</text>
+<circle cx="953" cy="512" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
+<text x="953" y="515.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">2</text>
+<circle cx="927" cy="540" r="6" fill="#fff3b0" stroke="#111" stroke-width="1.4" />
+<text x="927" y="543.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">3</text>
+<circle cx="953" cy="540" r="6" fill="#fff3b0" stroke="#111" stroke-width="1.4" />
+<text x="953" y="543.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">4</text>
+<circle cx="927" cy="568" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
+<text x="927" y="571.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">5</text>
+<circle cx="953" cy="568" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
+<text x="953" y="571.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">6</text>
+<circle cx="1140.0" cy="540.0" r="26" fill="#f5f5f5" stroke="#111" stroke-width="2" />
+<rect x="1118.0" y="534.0" width="22" height="12" fill="#ddd" stroke="#888" stroke-width="1" />
+<text x="1140.0" y="504.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Output Jack</text>
+<text x="1140.0" y="544.0" font-size="8" text-anchor="middle" font-family="sans-serif" fill="#666">TS</text>
+<path d="M1164.6657657493133,531.7780780835623 L1194,522" stroke="#111" stroke-width="1.8" />
+<circle cx="1194" cy="522" r="5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="1204" y="525" font-size="9" text-anchor="start" font-family="sans-serif" fill="#222" font-weight="bold">T  (tip)</text>
+<path d="M1164.6657657493133,548.2219219164377 L1194,558" stroke="#111" stroke-width="1.8" />
+<circle cx="1194" cy="558" r="5" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="1204" y="561" font-size="9" text-anchor="start" font-family="sans-serif" fill="#222" font-weight="bold">S  (sleeve)</text>
+<path d="M597.0,709.0 L597.0,731.0" stroke="#111" stroke-width="3" />
+<path d="M603.0,709.0 L603.0,731.0" stroke="#111" stroke-width="3" />
+<path d="M568.0,720 L597.0,720.0" stroke="#111" stroke-width="1.8" />
+<path d="M603.0,720.0 L632.0,720" stroke="#111" stroke-width="1.8" />
+<circle cx="568.0" cy="720" r="4.4" fill="#fff" stroke="#111" stroke-width="1.2" />
+<circle cx="632.0" cy="720" r="4.4" fill="#fff" stroke="#111" stroke-width="1.2" />
+<text x="600.0" y="745.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">0.047µF</text>
+<path d="M200,820 L1240,820" stroke="#1a1a1a" stroke-width="4.5" stroke-linecap="round" />
+<circle cx="200" cy="820" r="4" fill="#1a1a1a" />
+<circle cx="1240" cy="820" r="4" fill="#1a1a1a" />
+<path d="M200.0,820 L200.0,836" stroke="#1a1a1a" stroke-width="3" />
+<path d="M185.0,836 L215.0,836" stroke="#1a1a1a" stroke-width="3" />
+<path d="M190.0,842 L210.0,842" stroke="#1a1a1a" stroke-width="3" />
+<path d="M195.0,848 L205.0,848" stroke="#1a1a1a" stroke-width="3" />
+<text x="200.0" y="864" font-size="11" text-anchor="middle" font-family="sans-serif" fill="#333" font-weight="bold">Chassis GND</text>
+<path d="M261,280.0 L360,280.0 L360,610 L310,610 L310.0,591.9615242270663" stroke="#2a2a2a" stroke-width="4.0" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M261,280.0 L360,280.0 L360,610 L310,610 L310.0,591.9615242270663" stroke="#f8f8f8" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="261" cy="280.0" r="1.8" fill="#f8f8f8" />
+<circle cx="310.0" cy="591.9615242270663" r="1.8" fill="#f8f8f8" />
+<path d="M279,280.0 L279,400 L740,400 L740,540 L767,540" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="279" cy="280.0" r="1.8" fill="#1a1a1a" />
+<circle cx="767" cy="540" r="1.8" fill="#1a1a1a" />
+<text x="509.5" y="393.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">neck-GND lead to T3</text>
+<path d="M481,280.0 L481,440 L820,440 L820,540 L793,540" stroke="#2a2a2a" stroke-width="4.0" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M481,280.0 L481,440 L820,440 L820,540 L793,540" stroke="#f8f8f8" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="481" cy="280.0" r="1.8" fill="#f8f8f8" />
+<circle cx="793" cy="540" r="1.8" fill="#f8f8f8" />
+<text x="650.5" y="433.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">bridge-HOT lead to T4</text>
+<path d="M499,280.0 L499,390 Q512.0,400,499,410 L499,820" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="499" cy="280.0" r="1.8" fill="#1a1a1a" />
+<circle cx="499" cy="820" r="1.8" fill="#1a1a1a" />
+<path d="M767,512 L740,512 L740,810 L740,820" stroke="#d97706" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="767" cy="512" r="1.8" fill="#d97706" />
+<circle cx="740" cy="820" r="1.8" fill="#d97706" />
+<text x="750.0" y="664.0" font-size="10" text-anchor="start" font-family="sans-serif" fill="#333" font-style="italic">T1: GND  (parallel only)</text>
+<path d="M793,512 L793,470 L485,470 L485,610 L470.0,610 L470.0,591.9615242270663" stroke="#d97706" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="793" cy="512" r="1.8" fill="#d97706" />
+<circle cx="470.0" cy="591.9615242270663" r="1.8" fill="#d97706" />
+<text x="639.0" y="463.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">T2: Vol-B lug 3  (parallel only)</text>
+<path d="M767,568 L793,568" stroke="#2b6cb0" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="767" cy="568" r="1.8" fill="#2b6cb0" />
+<circle cx="793" cy="568" r="1.8" fill="#2b6cb0" />
+<text x="780.0" y="561.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">series-link jumper</text>
+<path d="M250.0,591.9615242270663 L250.0,820 L250.0,820" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="250.0" cy="591.9615242270663" r="1.8" fill="#1a1a1a" />
+<circle cx="250.0" cy="820" r="1.8" fill="#1a1a1a" />
+<path d="M222.0,540.0 L222.0,820 L222.0,820" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="222.0" cy="540.0" r="1.8" fill="#1a1a1a" />
+<circle cx="222.0" cy="820" r="1.8" fill="#1a1a1a" />
+<path d="M410.0,591.9615242270663 L410.0,820 L410.0,820" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="410.0" cy="591.9615242270663" r="1.8" fill="#1a1a1a" />
+<circle cx="410.0" cy="820" r="1.8" fill="#1a1a1a" />
+<path d="M382.0,540.0 L382.0,820 L382.0,820" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="382.0" cy="540.0" r="1.8" fill="#1a1a1a" />
+<circle cx="382.0" cy="820" r="1.8" fill="#1a1a1a" />
+<path d="M280.0,600.0 L280.0,660 L530,660" stroke="#e4a82f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="280.0" cy="600.0" r="1.8" fill="#e4a82f" />
+<circle cx="530" cy="660" r="1.8" fill="#e4a82f" />
+<path d="M440.0,600.0 L440.0,660 L530,660" stroke="#e4a82f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="440.0" cy="600.0" r="1.8" fill="#e4a82f" />
+<circle cx="530" cy="660" r="1.8" fill="#e4a82f" />
+<circle cx="530" cy="660" r="3.4" fill="#1a1a1a" />
+<text x="530" y="650" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#444">output bus</text>
+<path d="M530,660 L530,600.0 L600.0,600.0" stroke="#e4a82f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="530" cy="660" r="1.8" fill="#e4a82f" />
+<circle cx="600.0" cy="600.0" r="1.8" fill="#e4a82f" />
+<path d="M570.0,591.9615242270663 L570.0,720 L568.0,720" stroke="#e4a82f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="570.0" cy="591.9615242270663" r="1.8" fill="#e4a82f" />
+<circle cx="568.0" cy="720" r="1.8" fill="#e4a82f" />
+<path d="M632.0,720 L632.0,820 L632.0,820" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="632.0" cy="720" r="1.8" fill="#1a1a1a" />
+<circle cx="632.0" cy="820" r="1.8" fill="#1a1a1a" />
+<path d="M542.0,540.0 L542.0,820 L542.0,820" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="542.0" cy="540.0" r="1.8" fill="#1a1a1a" />
+<circle cx="542.0" cy="820" r="1.8" fill="#1a1a1a" />
+<text x="640.0" y="596.9615242270663" font-size="9" text-anchor="start" font-family="sans-serif" fill="#999">lug 3 unused</text>
+<path d="M530,660 L900,660 L900,540 L927,540" stroke="#e4a82f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="530" cy="660" r="1.8" fill="#e4a82f" />
+<circle cx="927" cy="540" r="1.8" fill="#e4a82f" />
+<text x="715.0" y="653.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">signal into T3</text>
+<path d="M927,512 L927,455 L1194,455 L1194,522" stroke="#e4a82f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="927" cy="512" r="1.8" fill="#e4a82f" />
+<circle cx="1194" cy="522" r="1.8" fill="#e4a82f" />
+<text x="1060.5" y="448.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">T1: jack tip</text>
+<path d="M953,540 L980,540 L980,610 L1194,610 L1194,522" stroke="#dc2626" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="953" cy="540" r="1.8" fill="#dc2626" />
+<circle cx="1194" cy="522" r="1.8" fill="#dc2626" />
+<text x="1087.0" y="603.0" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#333" font-style="italic">T4: jack tip  (carries tip→GND when kill ON)</text>
+<path d="M953,568 L953,810 L953,820" stroke="#dc2626" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="953" cy="568" r="1.8" fill="#dc2626" />
+<circle cx="953" cy="820" r="1.8" fill="#dc2626" />
+<text x="963.0" y="692.0" font-size="10" text-anchor="start" font-family="sans-serif" fill="#333" font-style="italic">T6: GND  (kill only)</text>
+<text x="917" y="586" font-size="8" text-anchor="end" font-family="sans-serif" fill="#999">T5 unused (dead-end)</text>
+<text x="963" y="504" font-size="8" text-anchor="start" font-family="sans-serif" fill="#999">T2 unused</text>
+<path d="M1194,558 L1194,820 L1194,820" stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="1194" cy="558" r="1.8" fill="#1a1a1a" />
+<circle cx="1194" cy="820" r="1.8" fill="#1a1a1a" />
+<rect x="20" y="660" width="180" height="108" fill="#fafafa" stroke="#bbb" stroke-width="1" rx="4" />
+<path d="M26,674.0 L48,674.0" stroke="#e4a82f" stroke-width="3" stroke-linecap="round" />
+<text x="56" y="677.0" font-size="10" font-family="sans-serif" fill="#222">Signal / hot bus  (always-on)</text>
+<path d="M26,690.0 L48,690.0" stroke="#f8f8f8" stroke-width="3" stroke-linecap="round" />
+<text x="56" y="693.0" font-size="10" font-family="sans-serif" fill="#222">Pickup hot lead  (Fender white)</text>
+<path d="M26,706.0 L48,706.0" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round" />
+<text x="56" y="709.0" font-size="10" font-family="sans-serif" fill="#222">Always-on chassis ground  (in every bass)</text>
+<path d="M26,722.0 L48,722.0" stroke="#d97706" stroke-width="3" stroke-linecap="round" />
+<text x="56" y="725.0" font-size="10" font-family="sans-serif" fill="#222">MOD parallel-only throws  (T1, T2)</text>
+<path d="M26,738.0 L48,738.0" stroke="#2b6cb0" stroke-width="3" stroke-linecap="round" />
+<text x="56" y="741.0" font-size="10" font-family="sans-serif" fill="#222">MOD series-only jumper  (T5↔T6)</text>
+<path d="M26,754.0 L48,754.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" />
+<text x="56" y="757.0" font-size="10" font-family="sans-serif" fill="#222">KILL kill-only throws  (T4, T6)</text>
+<rect x="80" y="878" width="1160" height="107" fill="#fafafa" stroke="#999" stroke-width="1" rx="4" />
+<text x="88" y="896" font-size="11" font-family="sans-serif" font-weight="bold" fill="#111">MOD switch  —  Series / Parallel toggle</text>
+<path d="M88,902 L1232,902" stroke="#ccc" stroke-width="1" />
+<text x="88" y="917" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">POS A</text>
+<text x="140" y="917" font-size="9" font-family="sans-serif" fill="#333">T3↔T1 closes (neck-GND meets GND rail)  +  T4↔T2 closes (bridge-HOT meets Vol-B.lug 3)</text>
+<text x="140" y="931" font-size="9" font-family="sans-serif" fill="#333">⇒  PARALLEL: each pickup feeds its own volume pot  =  standard J-Bass V/V/T</text>
+<text x="88" y="945" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">POS B</text>
+<text x="140" y="945" font-size="9" font-family="sans-serif" fill="#333">T3↔T5 and T4↔T6 close simultaneously; the T5↔T6 jumper ties both commons together</text>
+<text x="140" y="959" font-size="9" font-family="sans-serif" fill="#333">⇒  neck-GND  =  bridge-HOT  (the series junction inside the coil pair)</text>
+<text x="140" y="973" font-size="9" font-family="sans-serif" fill="#333">⇒  SERIES: coils joined end-to-end, output via Vol-N. Hotter, mid-forward.</text>
+<rect x="80" y="994" width="1160" height="93" fill="#fafafa" stroke="#999" stroke-width="1" rx="4" />
+<text x="88" y="1012" font-size="11" font-family="sans-serif" font-weight="bold" fill="#111">KILL switch  —  Stutter / signal interrupt</text>
+<path d="M88,1018 L1232,1018" stroke="#ccc" stroke-width="1" />
+<text x="88" y="1033" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">POS A</text>
+<text x="140" y="1033" font-size="9" font-family="sans-serif" fill="#333">T3↔T1 closes (signal continues to jack tip)  +  T4↔T2 closes (T2 unused, tip NOT shorted)</text>
+<text x="140" y="1047" font-size="9" font-family="sans-serif" fill="#333">⇒  NORMAL: signal passes through to the jack</text>
+<text x="88" y="1061" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">POS B</text>
+<text x="140" y="1061" font-size="9" font-family="sans-serif" fill="#333">T3↔T5 closes (signal dead-ends at unused T5)  +  T4↔T6 closes (jack tip → GND via T6)</text>
+<text x="140" y="1075" font-size="9" font-family="sans-serif" fill="#333">⇒  KILL: hot path broken AND tip shorted to ground  =  complete silence, no pop</text>
+<text x="50" y="1095" font-size="10" text-anchor="start" font-family="sans-serif" fill="#555">Pot lugs (viewed from the BACK of the pot): 1 = CCW end, 2 = wiper, 3 = CW end.  Volume pots wired hot→lug 3, wiper→out, lug 1→GND, casing (“GND” tab on the pot)→GND.  DPDT: terminals 3 &amp; 4 are the pole commons; 1, 2 = throw A; 5, 6 = throw B. Both poles switch together.</text>
+</svg>
