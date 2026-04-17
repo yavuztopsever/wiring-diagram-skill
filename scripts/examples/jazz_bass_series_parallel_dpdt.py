@@ -4,21 +4,29 @@
 # ///
 """Fender Jazz Bass — Parallel / Kill / Series with ONE DPDT-ON-OFF-ON switch.
 
-This is the v0.2 canonical example for the `wiring-diagram` skill.  It
-replaces the previous v0.1 two-DPDT design with an elegant single-switch
-mod: one DPDT-ON-OFF-ON whose three physical positions map to three
-electrical modes:
+Canonical example for the `wiring-diagram` skill. A single DPDT-ON-OFF-ON
+switch gives three electrical modes:
 
-    UP      (throw A closed)     →  PARALLEL  (standard Jazz Bass V/V/T)
-    MIDDLE  (both poles OFF)     →  KILL      (both pickups disconnected)
-    DOWN    (throw B closed)     →  SERIES    (two coils summed via
-                                                T5-T6 jumper)
+    THROW A  (T3↔T1 and T4↔T2 close)  →  PARALLEL  (standard J-Bass V/V/T)
+    OFF      (both commons float)     →  KILL      (both pickups disconnected)
+    THROW B  (T3↔T5 and T4↔T6 close)  →  SERIES    (coils summed via T5-T6 jumper)
 
-How the middle position kills signal
-------------------------------------
-Putting the switch in the middle OFF position opens BOTH poles
-simultaneously.  With `T3 = neck.gnd` (pole-1 common) and `T4 = bridge.hot`
-(pole-2 common) both floating:
+Positions labelled A / OFF / B rather than UP / MIDDLE / DOWN
+-------------------------------------------------------------
+Which physical lever direction maps to throw A vs throw B depends on the
+specific switch hardware — many mini-toggle DPDTs pivot OPPOSITE the
+visible flag (lever-up = bottom contacts closed), others don't. Rather
+than bake a lever-direction assumption into the diagram, positions are
+labelled by throw-letter. The installer orients their switch to match
+the lever direction they prefer (e.g. "flag down = parallel = throw A").
+A continuity test (multimeter) on the actual switch confirms which flag
+direction corresponds to which throw.
+
+How the OFF (middle) position kills signal
+------------------------------------------
+In the OFF position a DPDT-ON-OFF-ON opens BOTH poles simultaneously.
+With `T3 = neck.gnd` (pole-1 common) and `T4 = bridge.hot` (pole-2 common)
+both floating:
 
   - Bridge pickup: bridge.gnd is still tied to GND, but bridge.hot floats.
     The coil has no complete current path → zero signal reaches anywhere.
@@ -26,12 +34,20 @@ simultaneously.  With `T3 = neck.gnd` (pole-1 common) and `T4 = bridge.hot`
     floats.  Again no complete current path through the coil → Vol-N.lug(3)
     sits at ~0 V (pulled down by the pot resistance to lug 1/GND).
 
-Net: BUS → jack.tip → amp all sit at ~0 V = silence.  No separate kill
-switch needed; the "absence of closure" in the middle position IS the
-kill.  (Minor trade-off vs a dedicated hard-kill DPDT: the jack tip is
-left floating at 0 V rather than actively shorted to GND, so there's no
-hard bleed path for cable-capacitance transients.  In practice it's
-inaudible.)
+Net: BUS → jack.tip → amp all sit at ~0 V = silence.  The "absence of
+closure" in the OFF position IS the kill — no dedicated kill switch
+needed.  Minor trade-off vs a separate hard-kill DPDT: jack tip is left
+at 0 V rather than actively shorted to GND, so there's no bleed path
+for cable-capacitance transients. Inaudible in practice.
+
+⚠  Distinction from DPDT ON-ON-ON
+---------------------------------
+DPDT ON-ON-ON also has 3 positions, but the MIDDLE is NOT off — it's a
+third ACTIVE position where one pole connects to throw A and the other
+pole connects to throw B (or a similar "crossed" config). ON-ON-ON
+switches are used for Strat-style "7-sound" mods, NOT for series/parallel/
+kill. For THIS mod you MUST use ON-OFF-ON (verify on the packaging or
+datasheet; the two types look identical from the outside).
 
 Color coding (mode-dependent wires)
 -----------------------------------
@@ -40,12 +56,12 @@ Color coding (mode-dependent wires)
   gold    — always-on signal / hot bus
   white   — pickup hot lead (Fender convention, dark-outlined)
   orange  — MOD parallel-only throws (T1 → GND,  T2 → Vol-B.lug 3)
-            conducts only when switch is UP
+            conducts only when switch is in THROW A
   blue    — MOD series-only jumper (T5 ↔ T6)
-            conducts only when switch is DOWN
+            conducts only when switch is in THROW B
 
-Of the 8 wires that terminate on the ground rail, 7 are ALWAYS-ON
-chassis grounds; the one exception is MOD-T1 (orange), a parallel-only
+Of the 9 wires that terminate on the ground rail, 8 are ALWAYS-ON
+chassis grounds; the one exception is MOD-T1 (orange), a THROW-A-only
 path for the neck pickup's ground lead.
 """
 
@@ -143,7 +159,7 @@ d.wire_with_hops(
 
 # ============================================================ MOD DPDT ===
 
-# T1 → GND rail.  PARALLEL-ONLY: conducts only when switch is UP (throw A).
+# T1 → GND rail.  PARALLEL-ONLY: conducts only in THROW A.
 d.wire_path([
     mod.term(1),
     (740, mod.term(1)[1]),
@@ -161,8 +177,8 @@ d.wire_path([
     vol_b.lug(3),
 ], color=PARALLEL, label="T2: Vol-B lug 3  (parallel only)")
 
-# Series-link jumper T5 ↔ T6.  SERIES-ONLY: conducts only when switch is
-# DOWN (throw B), joining neck-GND to bridge-HOT via the commons.
+# Series-link jumper T5 ↔ T6.  SERIES-ONLY: conducts only in THROW B,
+# joining neck-GND to bridge-HOT via the commons.
 d.wire(mod.term(5), mod.term(6), color=SERIES, route="direct",
        label="series-link  (series only)")
 
@@ -230,21 +246,23 @@ d.legend(
 # ============================================================ TRUTH TABLE ===
 
 d.truth_table(
-    80, 870,
+    80, 860,
     "MOD switch (DPDT ON-OFF-ON)  —  all three operating modes",
     [
-        ("UP",
+        ("THROW A",
          "T3\u2194T1 closes (neck-GND meets GND rail)  +  T4\u2194T2 closes (bridge-HOT meets Vol-B.lug 3)"),
         ("",
          "\u21d2  PARALLEL: each pickup feeds its own vol pot  =  standard J-Bass V/V/T"),
-        ("MIDDLE",
+        ("OFF",
          "NOTHING closes.  Both commons (T3, T4) are floating.  Pickups have no complete current path through their coils."),
         ("",
          "\u21d2  KILL: both pickups electrically disconnected; BUS \u2248 0 V  \u2192  silent jack tip"),
-        ("DOWN",
+        ("THROW B",
          "T3\u2194T5 and T4\u2194T6 close simultaneously; T5\u2194T6 jumper ties both commons together"),
         ("",
          "\u21d2  SERIES: neck-GND \u2261 bridge-HOT; coils joined end-to-end, output via Vol-N.  Hotter, mid-forward"),
+        ("\u26a0  lever",
+         "Flag direction (up vs down) mapping to THROW A / OFF / THROW B depends on switch hardware. Use a multimeter to confirm which flag position closes which contacts BEFORE soldering."),
     ],
     width=1160,
 )
@@ -254,12 +272,12 @@ d.note(
     50, 1010,
     "Pot lugs (viewed from the BACK of the pot): 1 = CCW end, 2 = wiper, 3 = CW end.  "
     "Volume pots wired hot\u2192lug 3, wiper\u2192out, lug 1\u2192GND, casing (\u201cGND\u201d tab on the pot)\u2192GND.  "
-    "DPDT ON-OFF-ON: terminals 3 & 4 are the pole commons; 1, 2 = throw A (UP); 5, 6 = throw B (DOWN); MIDDLE = both poles open.",
+    "DPDT ON-OFF-ON: terminals 3 & 4 are the pole commons; 1, 2 = throw A; 5, 6 = throw B; OFF position leaves BOTH poles open.",
     size=10, color="#555",
 )
 d.note(
     50, 1030,
-    "Kill action note: with MOD in MIDDLE the jack tip sits at ~0 V but is NOT hard-shorted to GND.  "
+    "Kill action note: with MOD in OFF the jack tip sits at ~0 V but is NOT hard-shorted to GND.  "
     "A dedicated hard-kill DPDT would actively short tip\u2192GND (cleaner against cable-capacitance pop) — "
     "trade-off here is one switch instead of two.",
     size=10, color="#555",

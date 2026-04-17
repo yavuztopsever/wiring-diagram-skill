@@ -122,6 +122,8 @@
 <text x="767" y="571.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">5</text>
 <circle cx="793" cy="568" r="6" fill="#ffffff" stroke="#111" stroke-width="1.4" />
 <text x="793" y="571.2" font-size="10" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">6</text>
+<rect x="755.0" y="591.0" width="50" height="13" fill="none" stroke="#888" stroke-width="0.8" stroke-dasharray="3,2" rx="2" />
+<text x="780.0" y="599.5" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666" font-style="italic">OFF = both poles float</text>
 <circle cx="960.0" cy="540.0" r="26" fill="#f5f5f5" stroke="#111" stroke-width="2" />
 <rect x="938.0" y="534.0" width="22" height="12" fill="#ddd" stroke="#888" stroke-width="1" />
 <text x="960.0" y="504.0" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold" fill="#111">Output Jack</text>
@@ -226,18 +228,20 @@
 <text x="56" y="725.0" font-size="10" font-family="sans-serif" fill="#222">MOD parallel-only throws  (T1, T2)</text>
 <path d="M26,738.0 L48,738.0" stroke="#2b6cb0" stroke-width="3" stroke-linecap="round" />
 <text x="56" y="741.0" font-size="10" font-family="sans-serif" fill="#222">MOD series-only jumper  (T5↔T6)</text>
-<rect x="80" y="870" width="1160" height="121" fill="#fafafa" stroke="#999" stroke-width="1" rx="4" />
-<text x="88" y="888" font-size="11" font-family="sans-serif" font-weight="bold" fill="#111">MOD switch (DPDT ON-OFF-ON)  —  all three operating modes</text>
-<path d="M88,894 L1232,894" stroke="#ccc" stroke-width="1" />
-<text x="88" y="909" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">UP</text>
-<text x="140" y="909" font-size="9" font-family="sans-serif" fill="#333">T3↔T1 closes (neck-GND meets GND rail)  +  T4↔T2 closes (bridge-HOT meets Vol-B.lug 3)</text>
-<text x="140" y="923" font-size="9" font-family="sans-serif" fill="#333">⇒  PARALLEL: each pickup feeds its own vol pot  =  standard J-Bass V/V/T</text>
-<text x="88" y="937" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">MIDDLE</text>
-<text x="140" y="937" font-size="9" font-family="sans-serif" fill="#333">NOTHING closes.  Both commons (T3, T4) are floating.  Pickups have no complete current path through their coils.</text>
-<text x="140" y="951" font-size="9" font-family="sans-serif" fill="#333">⇒  KILL: both pickups electrically disconnected; BUS ≈ 0 V  →  silent jack tip</text>
-<text x="88" y="965" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">DOWN</text>
-<text x="140" y="965" font-size="9" font-family="sans-serif" fill="#333">T3↔T5 and T4↔T6 close simultaneously; T5↔T6 jumper ties both commons together</text>
-<text x="140" y="979" font-size="9" font-family="sans-serif" fill="#333">⇒  SERIES: neck-GND ≡ bridge-HOT; coils joined end-to-end, output via Vol-N.  Hotter, mid-forward</text>
-<text x="50" y="1010" font-size="10" text-anchor="start" font-family="sans-serif" fill="#555">Pot lugs (viewed from the BACK of the pot): 1 = CCW end, 2 = wiper, 3 = CW end.  Volume pots wired hot→lug 3, wiper→out, lug 1→GND, casing (“GND” tab on the pot)→GND.  DPDT ON-OFF-ON: terminals 3 &amp; 4 are the pole commons; 1, 2 = throw A (UP); 5, 6 = throw B (DOWN); MIDDLE = both poles open.</text>
-<text x="50" y="1030" font-size="10" text-anchor="start" font-family="sans-serif" fill="#555">Kill action note: with MOD in MIDDLE the jack tip sits at ~0 V but is NOT hard-shorted to GND.  A dedicated hard-kill DPDT would actively short tip→GND (cleaner against cable-capacitance pop) — trade-off here is one switch instead of two.</text>
+<rect x="80" y="860" width="1160" height="135" fill="#fafafa" stroke="#999" stroke-width="1" rx="4" />
+<text x="88" y="878" font-size="11" font-family="sans-serif" font-weight="bold" fill="#111">MOD switch (DPDT ON-OFF-ON)  —  all three operating modes</text>
+<path d="M88,884 L1232,884" stroke="#ccc" stroke-width="1" />
+<text x="88" y="899" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">THROW A</text>
+<text x="140" y="899" font-size="9" font-family="sans-serif" fill="#333">T3↔T1 closes (neck-GND meets GND rail)  +  T4↔T2 closes (bridge-HOT meets Vol-B.lug 3)</text>
+<text x="140" y="913" font-size="9" font-family="sans-serif" fill="#333">⇒  PARALLEL: each pickup feeds its own vol pot  =  standard J-Bass V/V/T</text>
+<text x="88" y="927" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">OFF</text>
+<text x="140" y="927" font-size="9" font-family="sans-serif" fill="#333">NOTHING closes.  Both commons (T3, T4) are floating.  Pickups have no complete current path through their coils.</text>
+<text x="140" y="941" font-size="9" font-family="sans-serif" fill="#333">⇒  KILL: both pickups electrically disconnected; BUS ≈ 0 V  →  silent jack tip</text>
+<text x="88" y="955" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">THROW B</text>
+<text x="140" y="955" font-size="9" font-family="sans-serif" fill="#333">T3↔T5 and T4↔T6 close simultaneously; T5↔T6 jumper ties both commons together</text>
+<text x="140" y="969" font-size="9" font-family="sans-serif" fill="#333">⇒  SERIES: neck-GND ≡ bridge-HOT; coils joined end-to-end, output via Vol-N.  Hotter, mid-forward</text>
+<text x="88" y="983" font-size="9" font-family="sans-serif" font-weight="bold" fill="#333">⚠  lever</text>
+<text x="140" y="983" font-size="9" font-family="sans-serif" fill="#333">Flag direction (up vs down) mapping to THROW A / OFF / THROW B depends on switch hardware. Use a multimeter to confirm which flag position closes which contacts BEFORE soldering.</text>
+<text x="50" y="1010" font-size="10" text-anchor="start" font-family="sans-serif" fill="#555">Pot lugs (viewed from the BACK of the pot): 1 = CCW end, 2 = wiper, 3 = CW end.  Volume pots wired hot→lug 3, wiper→out, lug 1→GND, casing (“GND” tab on the pot)→GND.  DPDT ON-OFF-ON: terminals 3 &amp; 4 are the pole commons; 1, 2 = throw A; 5, 6 = throw B; OFF position leaves BOTH poles open.</text>
+<text x="50" y="1030" font-size="10" text-anchor="start" font-family="sans-serif" fill="#555">Kill action note: with MOD in OFF the jack tip sits at ~0 V but is NOT hard-shorted to GND.  A dedicated hard-kill DPDT would actively short tip→GND (cleaner against cable-capacitance pop) — trade-off here is one switch instead of two.</text>
 </svg>
